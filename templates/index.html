@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <header>
+    <h2>{% block title %} Welcome to </h1>
+    <h1>ShortURLs {% endblock %}</h1>
+    </header>
+
+    <main>
+        <form method="post">
+        <div class="form-group">
+            <label for="url"></label>
+            <input type="text" name="url"
+               placeholder="Enter a long URL to make a TinyURL"
+               class="form-control"
+               value="{{ request.form['url'] }}" autofocus></input>
+        </div>
+
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary">Make A ShortURL!</button>
+        </div>
+        </form>
+    </main>
+
+    {% if short_url %}
+    <hr>
+    <span>{{ short_url }}</span>
+    {% endif %}
+{% endblock %}

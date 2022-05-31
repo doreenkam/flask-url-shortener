@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@800&display=swap');
+
+body {
+    color: #3A3845;
+    background-color: #F3E9DD;
+    font-family: 'Poppins', sans-serif;
+    display:flex; 
+    flex-direction:column; 
+    height:100vh; margin:0
+}
+
+nav a {
+    font-size: 20px;
+    position: relative;
+    left: 500px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+header {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-header {
+    margin-top: 30px;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    text-align: left;
+}
+
+.form-group input {
+    width: 450px;
+    height: 50px;
+    border-radius: 35px;
+    background-color: #F3E9DD;
+    border: 2px solid #3A3845;
+
+}
+
+.form-group input:focus {
+    background-color: #F3E9DD;
+    border: 2px solid #3A3845;
+
+}
+
+.form-group button {
+    background-color: #C0D8C0;
+    color: #3A3845;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 190px;
+    position: relative;
+    left: 130px;
+    
+}
+
+.form-group button:hover {
+    background-color: #C0D8C0;
+}
+
+footer {
+    margin-top:auto; 
+}
+
+footer a {
+    color: #3A3845;
+}
+
+footer a:hover {
+    color: #C0D8C0;
+    text-decoration: none;
+}
